@@ -1,0 +1,50 @@
+query("*")
+query("*")
+shutdown_test_server
+exit
+start_test_server_in_background
+start_test_server_in_background
+query("*")
+shutdown_test_server
+exit
+start_test_server_in_background
+query("textview","text")
+shutdown_test_server
+exit
+start_test_server_in_background
+shutdown_test_server
+exit
+exit
+start_test_server_in_background
+query("textview", "text")
+a = query("textview", "text")
+arr = []
+arr.push(a[2])
+arr.push(a[6])
+arr.push(a[8])
+arr.push(a[10])
+touch("* id:'list' * LinearLayout index:2 sibling * id:'folderarrow'")
+touch("* id:'list' * LinearLayout index:4 sibling * id:'folderarrow'")
+touch("* id:'list' * LinearLayout index:6 sibling * id:'folderarrow'")
+touch("* id:'list' * LinearLayout index:10 sibling * id:'folderarrow'")
+shutdown_test_server
+exit
+start_test_server_in_background
+query("*")
+query("*")
+clear
+shutdown_test_server
+exit
+start_test_server_in_background
+query("* id:'list' * LinearLayout index:10 sibling * id:'folderarrow'")
+query("* id:'list' * LinearLayout index:14 sibling * id:'folderarrow'")
+query("* id:'list' * LinearLayout index:18 sibling * id:'folderarrow'")
+shutdown_test_server
+exit
+reinstall_apps
+exit
+start_test_server_in_background
+query("* id:'editTextTo'")
+query("* id:'editTextTo'")
+shutdown_test_server
+exit

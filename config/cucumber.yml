@@ -1,0 +1,5 @@
+
+
+android: PLATFORM=android -r features/android/helpers -r features/android/pages -r features/android/support -r features/android/steps -r features/lib -r features/step_definitions
+
+ios: PLATFORM=ios -r features/ios/helpers -r features/ios/pages -r features/ios/support -r features/ios/steps -r features/lib -r features/step_definitions
